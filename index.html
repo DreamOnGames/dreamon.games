@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DreamOnGames — Printable Bingo & Party Games</title>
   <meta name="description" content="DreamOnGames creates printable bingo games and party games for family nights, classrooms, showers and celebrations.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta property="og:title" content="DreamOnGames">
   <meta property="og:description" content="Printable bingo and party games for family nights, classrooms, showers and celebrations.">
   <meta property="og:image" content="assets/logo-large.png">
-  <meta name="theme-color" content="#fcfaff">
+  <meta name="theme-color" content="#ebe4fb">
 </head>
 <body>
   <header class="site-header">
@@ -25,7 +24,7 @@
       </a>
       <nav class="nav">
         <a href="#about">About</a>
-        <a href="#what-we-make">What we make</a>
+        <a href="#games">Games</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </div>
@@ -33,60 +32,99 @@
 
   <main>
     <section class="hero">
+      <!-- Dekoratif yıldızlar -->
+      <div class="sky" aria-hidden="true">
+        <svg class="spark s1" viewBox="0 0 24 24"><path d="M12 1 C13 9 15 11 23 12 C15 13 13 15 12 23 C11 15 9 13 1 12 C9 11 11 9 12 1Z"/></svg>
+        <svg class="spark s2" viewBox="0 0 24 24"><path d="M12 1 C13 9 15 11 23 12 C15 13 13 15 12 23 C11 15 9 13 1 12 C9 11 11 9 12 1Z"/></svg>
+        <svg class="spark s3" viewBox="0 0 24 24"><path d="M12 1 C13 9 15 11 23 12 C15 13 13 15 12 23 C11 15 9 13 1 12 C9 11 11 9 12 1Z"/></svg>
+        <svg class="spark s4" viewBox="0 0 24 24"><path d="M12 1 C13 9 15 11 23 12 C15 13 13 15 12 23 C11 15 9 13 1 12 C9 11 11 9 12 1Z"/></svg>
+        <svg class="spark s5" viewBox="0 0 24 24"><path d="M12 1 C13 9 15 11 23 12 C15 13 13 15 12 23 C11 15 9 13 1 12 C9 11 11 9 12 1Z"/></svg>
+        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span><span class="dot d5"></span><span class="dot d6"></span>
+      </div>
+
       <div class="container hero-inner">
         <div class="hero-text">
           <p class="eyebrow">Printable games · Instant download</p>
-          <h1>Games that bring people <span class="highlight">together</span>.</h1>
-          <p class="lead">DreamOnGames designs colorful printable bingo and party games for family nights, classrooms, baby and bridal showers, holidays and every celebration in between.</p>
+          <h1>Games that bring people <em>together</em>.</h1>
+          <p class="lead">DreamOnGames designs printable bingo and party games for family nights, classrooms, baby and bridal showers, holidays and every celebration in between.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="https://www.etsy.com/shop/DreamOnGames" target="_blank" rel="noopener">Visit our Etsy shop</a>
-            <a class="btn btn-ghost" href="https://tr.pinterest.com/dreamongames1/" target="_blank" rel="noopener">Follow on Pinterest</a>
+            <a class="btn btn-ghost" href="https://www.pinterest.com/dreamongames1/" target="_blank" rel="noopener">Pinterest</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/dream_on_games" target="_blank" rel="noopener">Instagram</a>
           </div>
         </div>
         <div class="hero-art">
           <img src="assets/logo-large.png" alt="DreamOnGames logo: a sleeping crescent moon above clouds, with toy blocks spelling GAMES" width="640" height="439">
         </div>
       </div>
+
+      <!-- Hero'nun altındaki bulut kenarı -->
+      <svg class="cloud-edge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path class="c-back" d="M0 70 C60 30 130 30 180 60 C220 20 310 15 350 55 C400 25 470 30 500 62 C560 20 650 22 690 58 C740 28 810 30 850 60 C900 18 990 20 1030 56 C1080 26 1150 30 1190 60 C1240 22 1330 24 1370 58 C1400 45 1425 45 1440 52 L1440 120 L0 120Z"/>
+        <path class="c-front" d="M0 92 C50 62 120 62 160 86 C210 54 290 54 330 84 C380 58 450 60 490 88 C540 56 620 56 660 86 C710 60 780 62 820 88 C870 56 950 56 990 86 C1040 60 1110 62 1150 88 C1200 56 1280 56 1320 86 C1360 70 1410 70 1440 80 L1440 120 L0 120Z"/>
+      </svg>
     </section>
 
-    <section id="about" class="section">
-      <div class="container narrow">
+    <section id="about" class="section about-section">
+      <div class="container narrow center">
+        <p class="eyebrow">Who we are</p>
         <h2>About us</h2>
-        <p>We're a small independent studio based in Türkiye, making games for players all around the world. Every design starts with a simple question: will this make a room full of people laugh, shout and play together?</p>
+        <p>We're a small independent studio making games for players all around the world. Every design starts with a simple question: will this make a room full of people laugh, shout and play together?</p>
         <p>Our games are ready to print at home in minutes, with no special supplies needed. Just download, print and play.</p>
+      </div>
+    </section>
+
+    <section id="games" class="section games-section">
+      <div class="container">
+        <div class="center">
+          <p class="eyebrow">From our shop</p>
+          <h2>A peek at our <em>games</em></h2>
+          <p class="muted section-intro">A few favorites from our collection.</p>
+        </div>
+        <!-- Kartlar assets/games-data.js listesinden rastgele seçilip buraya eklenir -->
+        <div class="games" id="games-grid">
+          <noscript><p class="center muted">See our games on <a href="https://www.etsy.com/shop/DreamOnGames">Etsy</a>.</p></noscript>
+        </div>
+        <div class="center-row cta-row games-more">
+          <a class="btn btn-primary" href="https://www.etsy.com/shop/DreamOnGames" target="_blank" rel="noopener">See all games on Etsy</a>
+        </div>
       </div>
     </section>
 
     <section id="what-we-make" class="section section-alt">
       <div class="container">
-        <h2 class="center">What we make</h2>
+        <div class="center">
+          <p class="eyebrow">Our games</p>
+          <h2>What we make</h2>
+        </div>
         <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🎲</div>
-            <h3>Printable bingo</h3>
-            <p>Themed bingo sets for holidays, parties and showers, with unique cards and calling sheets.</p>
+          <article class="card card-lavender">
+            <h3>Bingo Games</h3>
+            <p>Themed bingo sets for holidays, parties, community meet-ups and showers, with unique cards, calling sheets and toppers.</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🎉</div>
-            <h3>Party games</h3>
-            <p>Quick, easy-to-run games that get every guest involved, from kids to grandparents.</p>
+          <article class="card card-sky">
+            <h3>Music Bingo</h3>
+            <p>Music bingo with playlists for every crowd, from classics to modern hits. Press play and let guests listen, mark and sing along.</p>
           </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🧠</div>
-            <h3>Quiz games</h3>
-            <p>Ready-to-play quiz and guessing games for game nights, classrooms and team events.</p>
+          <article class="card card-butter">
+            <h3>Mingle Bingo</h3>
+            <p>&ldquo;Find someone who&rdquo; icebreakers that get guests talking and mixing at showers, weddings, housewarmings and work parties.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container narrow center">
-        <h2>Find us online</h2>
-        <p>Browse the full collection on Etsy and discover new game ideas on Pinterest.</p>
-        <div class="cta-row center-row">
-          <a class="btn btn-primary" href="https://www.etsy.com/shop/DreamOnGames" target="_blank" rel="noopener">Etsy shop</a>
-          <a class="btn btn-ghost" href="https://tr.pinterest.com/dreamongames1/" target="_blank" rel="noopener">Pinterest</a>
+      <div class="container">
+        <div class="cta-panel">
+          <img src="assets/favicon.png" alt="" class="cta-moon" width="64" height="64">
+          <h2>Find us online</h2>
+          <p>Browse the full collection on Etsy and follow along on Pinterest and Instagram for new game ideas.</p>
+          <div class="cta-row center-row">
+            <a class="btn btn-primary" href="https://www.etsy.com/shop/DreamOnGames" target="_blank" rel="noopener">Etsy shop</a>
+            <a class="btn btn-ghost" href="https://www.pinterest.com/dreamongames1/" target="_blank" rel="noopener">Pinterest</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/dream_on_games" target="_blank" rel="noopener">Instagram</a>
+          </div>
         </div>
       </div>
     </section>
@@ -98,9 +136,12 @@
       <nav class="footer-nav">
         <a href="privacy.html">Privacy Policy</a>
         <a href="https://www.etsy.com/shop/DreamOnGames" target="_blank" rel="noopener">Etsy</a>
-        <a href="https://tr.pinterest.com/dreamongames1/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://www.pinterest.com/dreamongames1/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://www.instagram.com/dream_on_games" target="_blank" rel="noopener">Instagram</a>
       </nav>
     </div>
   </footer>
+  <script src="assets/games-data.js"></script>
+  <script src="assets/gallery.js"></script>
 </body>
 </html>
